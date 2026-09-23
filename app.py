@@ -8,8 +8,14 @@ from memory import Memory
 app = Flask(__name__)
 CORS(app)
 
-chatbot = Chatbot()
 memory = Memory()
+chatbot = None
+
+def get_chatbot():
+    global chatbot
+    if chatbot is None:
+        chatbot = Chatbot()
+    return chatbot
 
 @app.route("/", methods=["GET"])
 def health():
@@ -27,7 +33,7 @@ def chat():
         conversation_id = data.get("conversation_id", str(uuid.uuid4()))
 
         # Get response from chatbot
-        response = chatbot.chat(conversation_id, user_message)
+        response = get_chatbot().chat(conversation_id, user_message)
 
         return jsonify({
             "conversation_id": conversation_id,
@@ -79,3 +85,4 @@ def create_conversation():
 
 if __name__ == "__main__":
     app.run(debug=(FLASK_ENV == "development"), port=PORT)
+
