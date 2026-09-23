@@ -1,0 +1,90 @@
+TANISH SAINI - AI & BACKEND DEVELOPER
+=====================================
+
+ABOUT
+-----
+I'm an AI and backend developer specializing in building RAG pipelines, chatbots, and workflow automation. I have hands-on experience with Python, the OpenAI API, Pinecone, n8n, and cloud deployment. I'm passionate about building intelligent systems that solve real problems.
+
+CONTACT
+-------
+Email: tanishsaini2003@gmail.com
+GitHub: https://github.com/Tanish-GITT
+LinkedIn: https://www.linkedin.com/in/tanish-saini-9ab0b221a/
+Portfolio: https://tanish-gitt.github.io/portfolio/
+
+EDUCATION
+---------
+MCA (Master of Computer Applications)
+Maharishi Dayanand University, Rohtak, Haryana
+GPA: 8.1/10
+
+TECHNICAL SKILLS
+----------------
+Languages: Python, SQL, C++, C, JavaScript
+AI/ML: OpenAI API, Groq API, LLMs, RAG Systems, Vector Databases
+Frameworks & Libraries: Flask, FastAPI, n8n, Docker
+Databases: SQLite, PostgreSQL, Pinecone (Vector DB)
+Tools: Git, GitHub, VS Code, Render, Heroku
+Specializations: Chatbots, Retrieval-Augmented Generation (RAG), Workflow Automation, LLM Integration
+
+EXPERIENCE & PROJECTS
+---------------------
+
+1. LEAD ENGAGEMENT AUTOMATION PIPELINE (n8n)
+   - End-to-end lead generation and outreach pipeline
+   - Pulls leads from Google News RSS
+   - Logs to Google Sheets CRM
+   - Uses Groq API + Llama 3.1 for personalized outreach
+   - Generates daily reports via Gmail
+   - Tech: n8n, Groq API, Llama 3.1, Google Sheets, Gmail, REST APIs
+   - Status: Shortlisted for round 2 of competition
+   - GitHub: https://github.com/Tanish-GITT/N8N_autoleadgen-outreach
+
+2. RAG-BASED DATA ANALYSIS AI AGENT
+   - Retrieval-augmented generation system for automated document analysis
+   - Built on OpenAI API with semantic search
+   - Features: Document chunking, embeddings, Pinecone vector search
+   - Containerized with Docker
+   - Orchestrated in n8n
+   - Tech: OpenAI API, Pinecone, Embeddings, Docker, n8n
+   - GitHub: https://github.com/Tanish-GITT/N8N_RAG
+
+3. AI CHATBOT WITH PERSISTENT MEMORY
+   - Conversational chatbot in Python with multi-turn context awareness
+   - Built with Flask backend and SQLite database
+   - Uses GPT-4o-mini for cost-efficient responses
+   - Persistent conversation history across sessions
+   - Live demo embedded in portfolio
+   - Tech: Python, Flask, OpenAI API, SQLite, Render
+   - GitHub: https://github.com/Tanish-GITT/AI-chatbot
+
+4. YOUTUBE HOMEPAGE REPLICA
+   - Faithful pixel-level recreation of YouTube homepage
+   - Pure HTML and CSS (no JavaScript, no framework)
+   - Responsive design
+   - Tech: HTML, CSS
+
+5. FLAPPY BIRD (UNITY)
+   - Classic side-scroller game with physics
+   - Collision detection, score tracking, game-over state
+   - Tech: Unity, C#
+
+WHAT I BUILD
+------------
+- RAG Pipelines: Document analysis systems with semantic search
+- Chatbots: Conversational AI with context awareness
+- Workflow Automation: End-to-end pipelines with n8n
+- Backend APIs: REST APIs with Flask/FastAPI
+- AI Integration: LLM-powered applications
+
+INTERESTS
+---------
+- Building intelligent systems with LLMs
+- Designing scalable backend architectures
+- Workflow automation and process optimization
+- Open to full-time roles, internships, and freelance AI/backend projects
+
+AVAILABILITY
+-----------
+- Location: Haryana, India (available remotely)
+- Open to: Full-time roles, internships, freelance projects

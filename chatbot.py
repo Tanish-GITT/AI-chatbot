@@ -1,15 +1,38 @@
 from openai import OpenAI
 from config import OPENAI_API_KEY
 from memory import Memory
+import os
 
 class Chatbot:
     def __init__(self):
         self.client = OpenAI(api_key=OPENAI_API_KEY)
         self.memory = Memory()
         self.model = "gpt-4o-mini"
-        self.system_prompt = """You are a helpful and friendly assistant.
-Provide clear, concise, and accurate responses.
-If you don't know something, be honest about it."""
+
+        # Load knowledge base
+        self.knowledge_base = self.load_knowledge_base()
+
+        self.system_prompt = f"""You are a helpful AI assistant representing Tanish Saini, an AI and backend developer.
+
+Here's information about Tanish:
+
+{self.knowledge_base}
+
+When users ask about Tanish, his projects, skills, or experience, use this information to provide accurate, personalized responses.
+Be friendly and professional. If asked something not in the knowledge base, be honest that you don't have that information.
+Always encourage them to visit the portfolio or reach out via the provided contact information."""
+
+    def load_knowledge_base(self):
+        """Load knowledge base from file"""
+        kb_path = "knowledge_base.txt"
+        if os.path.exists(kb_path):
+            try:
+                with open(kb_path, 'r', encoding='utf-8') as f:
+                    return f.read()
+            except Exception as e:
+                print(f"Error loading knowledge base: {e}")
+                return "Information about Tanish is currently unavailable."
+        return "Information about Tanish is currently unavailable."
 
     def chat(self, conversation_id, user_message):
         # Get conversation history
@@ -35,3 +58,4 @@ If you don't know something, be honest about it."""
         self.memory.add_message(conversation_id, "assistant", assistant_message)
 
         return assistant_message
+
