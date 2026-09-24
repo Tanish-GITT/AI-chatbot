@@ -148,14 +148,6 @@ curl -X POST http://localhost:5000/api/chat \
 curl http://localhost:5000/api/conversations
 ```
 
-## Next Steps: Portfolio Integration
-
-To integrate this into your portfolio:
-
-1. Deploy backend to a service (Render, Railway, Heroku)
-2. Add a React component that calls the API
-3. Embed the chatbot widget in your portfolio
-
 ## Future Improvements
 
 - PostgreSQL for production
